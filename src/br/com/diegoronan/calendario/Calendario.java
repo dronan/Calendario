@@ -1,11 +1,25 @@
 package br.com.diegoronan.calendario;
 
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Scanner;
 
 public class Calendario {
 	public static void main(String[] args) {
 
-		String data = "3/11/2001";
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.print("Dia: ");
+		int dia = scan.nextInt();
+			
+		System.out.print("Mes: ");
+		int mes = scan.nextInt();
+		
+		System.out.print("Ano: ");
+		int ano = scan.nextInt();
+		
+		String data = dia+"/"+mes+"/"+ano;
+		
 
 		try {
 
